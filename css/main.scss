@@ -1,0 +1,10 @@
+---
+# This file is compiled based on the contents of _sass/main.scss
+
+# My syntax highlighter does not like the front matter required for
+# Jekyll to process the file, which is why this file delegates to
+# _sass/main.scss
+
+# The compiled CSS file is referenced in _includes/head.html
+---
+@import 'main';

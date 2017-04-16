@@ -9,8 +9,15 @@
   details, see the GNU General Public License, available at:
   http://www.gnu.org/licenses/
 */
+@import 'site-wide-values';
+@import 'running-sections';
+
 .content {
-  font-family: sans-serif;
+  width: $site-width;
+  margin: auto;
+  padding: 5px 0px;
+
+  @include base-text();
 }
 
 /*

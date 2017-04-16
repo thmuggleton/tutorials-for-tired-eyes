@@ -1,0 +1,37 @@
+@import 'site-wide-values';
+
+$vertical-padding: 10px;
+
+.site-header {
+  background: black;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+    @include base-text();
+  }
+}
+
+.site-header__container {
+  width: $site-width;
+  margin: auto;
+  position: relative;
+  padding: $vertical-padding 0px;
+}
+
+.site-header__nav {
+  position: absolute;
+  top: $vertical-padding;
+  right: 0px;
+
+  li {
+    float: left;
+    padding: 0px 5px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+

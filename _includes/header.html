@@ -6,7 +6,8 @@
     <nav class="site-header__nav">
       <ul>
         <li><a href="{{ "/" | relative_url }}">Home</a></li>
-        <li><a href="#">About</a></li>
+        {% assign about_page = site.categories.about | where: "title", "About" | first %}
+        <li><a href="{{ about_page.url }}">{{ about_page.title }}</a></li>
       </ul>
     </nav>
   </div>

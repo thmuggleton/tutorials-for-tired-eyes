@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="site-footer__container">
+    <span class="site-footer__copyright-notice">
+      &copy; {{ site.last_updated_date | date: '%Y' }} {{ site.author }}
+    </span>
+    <nav class="site-footer__nav">
+      <ul>
+        {% assign sorted_about_pages = site.categories.about | sort 'position_in_category' %}
+        {% for about_page in sorted_about_pages %}
+        <li><a href="{{ about_page.url }}">{{ about_page.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</footer>

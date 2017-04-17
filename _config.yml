@@ -4,3 +4,6 @@ keywords: GNU, Linux, git, Vim
 description: >
   A website for learning about git, Vim and other command line tools.
 
+last_updated_date: 2017-04-17
+
+permalink: /:categories/:title/

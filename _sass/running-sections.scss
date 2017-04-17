@@ -2,7 +2,7 @@
 
 $vertical-padding: 10px;
 
-.site-header {
+@mixin running-section {
   background: black;
   color: white;
 
@@ -13,14 +13,14 @@ $vertical-padding: 10px;
   }
 }
 
-.site-header__container {
+@mixin running-section-container {
   width: $site-width;
   margin: auto;
   position: relative;
   padding: $vertical-padding 0px;
 }
 
-.site-header__nav {
+@mixin running-section-nav {
   position: absolute;
   top: $vertical-padding;
   right: 0px;
@@ -35,3 +35,41 @@ $vertical-padding: 10px;
   }
 }
 
+/*
+  Header
+*/
+
+.site-header {
+  @include running-section();
+}
+
+.site-header__container {
+  @include running-section-container();
+}
+
+.site-header__nav {
+  @include running-section-nav();
+}
+
+/*
+  Footer
+*/
+
+.site-footer {
+  @include running-section();
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.site-footer__container {
+  @include running-section-container();
+}
+
+.site-footer__copyright-notice {
+  @include base-text();
+}
+
+.site-footer__nav {
+  @include running-section-nav();
+}

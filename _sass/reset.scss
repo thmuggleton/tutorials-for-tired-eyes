@@ -20,7 +20,11 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
+/*
+  N.B. this is included in the original but has been commented out here as it
+  is not helpful in the context of this project.
   font: inherit;
+*/
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */

@@ -19,11 +19,26 @@
 }
 
 .content h2 {
+  margin-top: 10px;
   @include base-text(1.2em);
+}
+
+.content h3 {
+  margin-top: 10px;
+  @include base-text();
 }
 
 .content p {
   padding: 5px 0px;
+  @include base-text();
+}
+
+.content ul {
+  list-style: inherit;
+  margin: 0px 5%;
+}
+
+.content li {
   @include base-text();
 }
 

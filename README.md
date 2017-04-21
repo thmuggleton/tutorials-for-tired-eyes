@@ -26,6 +26,9 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  For more
 details, see the GNU General Public License, available at:
 http://www.gnu.org/licenses/
 
+Responsibility for the content or views expressed on other websites that are
+linked to from this website cannot be attributed to this website or its author.
+
 Any trademark that appears in the source code or content of this website is the
 property of its owner.
 
@@ -34,8 +37,12 @@ not imply endorsement of this website or its author by any associated
 organisation or individual.
 
 The presence of a trademark, a trading name, or the name of an individual does
-not necessarily imply endorsement of associated organisations or individuals by
-this website or its author.
+not imply endorsement of associated organisations or individuals by this
+website or its author.
+
+The presence of a link to an external website does not imply endorsement of the
+author or the content of that website, or the views expressed on that website,
+by this website or the author of this website.
 
 The views expressed on this website are those of the author alone and do not
 represent the views of any organisation with which this website or its author

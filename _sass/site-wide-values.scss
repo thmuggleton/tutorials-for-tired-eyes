@@ -1,7 +1,14 @@
 $site-width: 80%;
+$footer-height: 2.3em;
 
-@mixin base-text($font-size: 1em) {
+@mixin heading-text($font-size: 1em) {
   font-family: sans-serif;
   font-size: $font-size;
+}
+
+@mixin content-text($font-size: 1em) {
+  font-family: sans-serif;
+  font-size: $font-size;
+  line-height: $font-size + 0.4;
   text-align: justify;
 }

@@ -1,0 +1,11 @@
+<section class="disclaimer" aria-label="alert">
+  {% assign license_page = site.categories.about | where: "title", "License" | first %}
+  {% assign terms_page = site.categories.about | where: "title", "Terms" | first %}
+  <p class="disclaimer__text">
+    By using this website, you acknowledge that you have read, understood and
+    agree to be bound by its
+    <a href="{{ license_page.url }}">{{ license_page.title }}</a>
+    and
+    <a href="{{ terms_page.url }}">{{ terms_page.title }}</a>.
+  </p>
+</section>

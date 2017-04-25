@@ -48,6 +48,15 @@ $footer-text-size: 0.9em;
   @include running-section-container();
 }
 
+.site-header__title {
+  margin-bottom: 5px;
+  @include heading-text(1.5em);
+}
+
+.site-header__subtitle {
+  @include heading-text();
+}
+
 .site-header__nav {
   @include running-section-nav();
 }

@@ -1,9 +1,10 @@
 author: Thomas H. Muggleton
 title: Tutorials for tired eyes
+subtitle: Approachable guides to command line tools
 keywords: GNU, Linux, git, Vim
 description: >
   A website for learning about git, Vim and other command line tools.
 
-last_updated_date: 2017-04-23
+last_updated_date: 2017-04-25
 
 permalink: /:categories/:title/

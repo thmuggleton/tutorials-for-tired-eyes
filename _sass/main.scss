@@ -11,6 +11,7 @@
 */
 @import 'site-wide-values';
 @import 'running-sections';
+@import 'content';
 
 html, body {
   height: 100%;
@@ -23,41 +24,10 @@ html, body {
 
 .disclaimer {
   width: $site-width;
-  margin: 5px auto;
+  margin: 5px auto 0px auto;
   border: 1px solid;
   padding: 10px;
   background: lightyellow;
-  @include content-text();
-}
-
-.content {
-  width: $site-width;
-  margin: auto;
-  padding-top: 5px;
-  padding-bottom: $footer-height + 0.3;
-}
-
-.content h2 {
-  margin-top: 10px;
-  @include heading-text(1.2em);
-}
-
-.content h3 {
-  margin-top: 10px;
-  @include heading-text();
-}
-
-.content p {
-  padding: 5px 0px;
-  @include content-text();
-}
-
-.content ul {
-  list-style: inherit;
-  margin: 0px 5%;
-}
-
-.content li {
   @include content-text();
 }
 

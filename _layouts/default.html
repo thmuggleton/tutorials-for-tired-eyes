@@ -11,8 +11,11 @@
 
       {% include disclaimer.html %}
 
-      <main class="content" aria-label="Content">
-        {{ content }}
+      <main class="content">
+        <article class="content-article">
+          {{ content }}
+        </article>
+        {% include content-nav.html %}
       </main>
 
       {% include footer.html %}

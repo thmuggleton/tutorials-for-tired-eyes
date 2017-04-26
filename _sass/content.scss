@@ -1,0 +1,51 @@
+@import 'site-wide-values';
+
+$sidebar-nav-width: 20%;
+
+.content {
+  position: relative;
+  width: $site-width;
+  margin: auto;
+  padding-bottom: $footer-height + 0.3;
+}
+
+.content-article {
+  margin-right: $sidebar-nav-width;
+
+  h2 {
+    margin-top: 10px;
+    @include heading-text(1.2em);
+  }
+
+  h3 {
+    margin-top: 10px;
+    @include heading-text();
+  }
+
+  p {
+    padding: 5px 0px;
+    @include content-text();
+  }
+
+  ul {
+    list-style: inherit;
+    margin: 0px 5%;
+  }
+
+  li {
+    @include content-text();
+  }
+}
+
+.content-nav {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-left: 1px solid;
+  padding: 2%;
+}
+
+.content-nav__list-item {
+  @include content-text();
+}
+

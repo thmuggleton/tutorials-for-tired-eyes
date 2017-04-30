@@ -9,4 +9,8 @@
   {% endfor %}
   </ul>
 </nav>
+{% else %}
+<nav class="content-nav">
+  {% include categories-nav-list.html %}
+</nav>
 {% endif %}

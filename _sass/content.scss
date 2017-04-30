@@ -43,9 +43,8 @@ $sidebar-nav-width: 20%;
   right: 0px;
   border-left: 1px solid;
   padding: 2%;
-}
 
-.content-nav__list-item {
-  @include content-text();
+  .content-nav__list-item, .categories-nav-list__list-item {
+    @include content-text();
+  }
 }
-

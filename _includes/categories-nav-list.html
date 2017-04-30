@@ -1,0 +1,11 @@
+<ul class="categories-nav-list">
+{% for category in site.categories %}
+  {% assign category_name = category[0] %}
+  {% unless category_name == 'about' %}
+    {% assign category_introduction_url = "/" | append: category_name | append: "/introduction/" %}
+    <li class="categories-nav-list__list-item">
+      <a href="{{ category_introduction_url | relative_url }}">{{ category_name | capitalize }}</a>
+    </li>
+  {% endunless %}
+{% endfor %}
+</ul>

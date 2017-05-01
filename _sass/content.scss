@@ -35,6 +35,16 @@ $sidebar-nav-width: 20%;
   li {
     @include content-text();
   }
+
+  pre {
+    margin: 10px 2%;
+
+    code {
+      display: block;
+      padding: 10px;
+      @include code-text(1.2em);
+    }
+  }
 }
 
 .content-nav {

@@ -41,6 +41,7 @@ $sidebar-nav-width: 20%;
 
     code {
       display: block;
+      overflow-x: auto;
       padding: 10px;
       @include code-text(1.2em);
     }

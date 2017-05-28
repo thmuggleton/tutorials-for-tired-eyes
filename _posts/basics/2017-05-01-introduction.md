@@ -55,7 +55,7 @@ together by any available sorting, this would be rather arduous using a GUI.
 On the command line, you would just issue this command:
 
 ```
-$ mkdir Lovely-birds && mv *penguin* Lovely-birds/
+mkdir Lovely-birds && mv *penguin* Lovely-birds/
 ```
 
 You might counter that, by the time you have typed all of that in, you might as

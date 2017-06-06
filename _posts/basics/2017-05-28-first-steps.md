@@ -35,8 +35,9 @@ do with a graphical file manager.  The working directory gives the context for
 the commands that you run.
 
 To find out what your current working directory is, you use `pwd`, which stands
-for "print working directory".  Try it yourself by typing the following, then
-pressing `ENTER`:
+for "print working directory" (Nb. "print" here just means output to the
+screen, not send something to a physical printer).  Try it yourself by typing
+the following, then pressing `ENTER`:
 ```
 pwd
 ```
@@ -77,6 +78,31 @@ cd /home/username/Documents
 ```
 This is an absolute path, which you can tell because it starts with a forward
 slash.  The leading `/` is also known as the **root directory**.
+
+Two useful shorthands related to paths are `.` and `..`.  These refer to the
+current working directory and the **parent directory** respectively.  The
+parent directory is the directory which contains the current working directory.
+This might be easier to understand with an example:
+```
+username@localhost$ pwd
+/home/username/Documents
+username@localhost$ cd ..
+username@localhost$ pwd
+/home/username
+```
+Thus, you can see that if my current working directory is
+`/home/username/Documents`, the parent directory is `/home/username`.
+
+One final shorthand that is useful to know is `~`.  This is used in place of
+your home directory, i.e. `/home/username` on GNU/Linux or `/Users/username` on
+Mac OS X:
+```
+username@localhost$ cd ~/Pictures
+username@localhost$ pwd
+/home/username/Pictures
+```
+However, it is worth noting that some programs do not recognise `~`, so if you
+experience errors, you may need to specify the full absolute path.
 
 ### Tab completion
 
